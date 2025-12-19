@@ -36,7 +36,9 @@ yarn.lock
 # ide
 .idea
 *.iml
-
+.vscode/
+.github/
+.docs/
 cache/
 fuwari/
 src/data/myself.ts
