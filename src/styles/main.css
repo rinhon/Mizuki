@@ -26,6 +26,15 @@
   font-display: swap;
 }
 
+/* 导入 荆南俊俊体  字体 */
+@font-face {
+  font-family: "荆南俊俊体";
+  src: url("/assets/font/荆南俊俊体.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

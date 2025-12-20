@@ -23,7 +23,7 @@ const SITE_TIMEZONE = 8; //设置你的网站时区 from -12 to 12 default in UT
 export const siteConfig: SiteConfig = {
 	title: "Rinhon",
 	subtitle: "高手笔记",
-	siteURL: "https://blog.rinhonlc.fun/", // 请替换为你的站点URL，以斜杠结尾
+	siteURL: "http://blog.rinhonlc.fun/", // 请替换为你的站点URL，以斜杠结尾
 	siteStartDate: "2025-01-01", // 站点开始运行日期，用于站点统计组件计算运行天数
 
 	timeZone: SITE_TIMEZONE,
@@ -50,7 +50,7 @@ export const siteConfig: SiteConfig = {
 	// 顶栏标题配置
 	navbarTitle: {
 		// 顶栏标题文本
-		text: "MizukiUI",
+		text: "Rinhon",
 		// 顶栏标题图标路径，默认使用 public/assets/home/home.png
 		icon: "assets/home/home.png",
 	},
@@ -67,7 +67,7 @@ export const siteConfig: SiteConfig = {
 	postListLayout: {
 		// 默认布局模式："list" 列表模式（单列布局），"grid" 网格模式（双列布局）
 		// 注意：如果侧边栏配置启用了"both"双侧边栏，则无法使用文章列表"grid"网格（双列）布局
-		defaultMode: "list",
+		defaultMode: "grid",
 		// 是否允许用户切换布局
 		allowSwitch: true,
 	},
@@ -75,19 +75,19 @@ export const siteConfig: SiteConfig = {
 	// 标签样式配置
 	tagStyle: {
 		// 是否使用新样式（悬停高亮样式）还是旧样式（外框常亮样式）
-		useNewStyle: false,
+		useNewStyle: true,
 	},
 
 	// 壁纸模式配置
 	wallpaperMode: {
-		// 默认壁纸模式：banner=顶部横幅，fullscreen=全屏壁纸，none=无壁纸
-		defaultMode: "fullscreen",
+		// 默认壁纸模式： banner =顶部横幅， fullscreen =全屏壁纸， none =无壁纸
+		defaultMode: "banner",
 		// 整体布局方案切换按钮显示设置（默认："desktop"）
 		// "off" = 不显示
 		// "mobile" = 仅在移动端显示
 		// "desktop" = 仅在桌面端显示
 		// "both" = 在所有设备上显示
-		showModeSwitchOnMobile: "desktop",
+		showModeSwitchOnMobile: "both",
 	},
 
 	banner: {
@@ -121,7 +121,7 @@ export const siteConfig: SiteConfig = {
 
 		waves: {
 			enable: true, // 是否启用水波纹效果(这个功能比较吃性能)
-			performanceMode: false, // 性能模式：减少动画复杂度(性能提升40%)
+			performanceMode: true, // 性能模式：减少动画复杂度(性能提升40%)
 			mobileDisable: false, // 移动端禁用
 		},
 
@@ -136,7 +136,7 @@ export const siteConfig: SiteConfig = {
 
 		homeText: {
 			enable: true, // 在主页显示自定义文本
-			title: "美しいミズキ", // 主页横幅主标题
+			title: "Rinhon", // 主页横幅主标题
 
 			subtitle: [
 				"特別なことはないけど、君がいると十分です",
@@ -162,7 +162,7 @@ export const siteConfig: SiteConfig = {
 		},
 
 		navbar: {
-			transparentMode: "semifull", // 导航栏透明模式："semi" 半透明加圆角，"full" 完全透明，"semifull" 动态透明
+			transparentMode: "full", // 导航栏透明模式："semi" 半透明加圆角，"full" 完全透明，"semifull" 动态透明
 		},
 	},
 	toc: {
@@ -192,14 +192,14 @@ export const siteConfig: SiteConfig = {
 			fontFamily: "ZenMaruGothic-Medium",
 			fontWeight: "400",
 			localFonts: ["ZenMaruGothic-Medium.ttf"],
-			enableCompress: true, // 启用字体子集优化，减少字体文件大小
+			enableCompress: false, // 启用字体子集优化，减少字体文件大小
 		},
 		cjkFont: {
 			// 中日韩字体 - 作为回退字体
-			fontFamily: "萝莉体 第二版",
+			fontFamily: "荆南俊俊体",
 			fontWeight: "500",
-			localFonts: ["萝莉体 第二版.ttf"],
-			enableCompress: true, // 启用字体子集优化，减少字体文件大小
+			localFonts: ["荆南俊俊体.ttf"],
+			enableCompress: false, // 启用字体子集优化，减少字体文件大小
 		},
 	},
 	showLastModified: true, // 控制“上次编辑”卡片显示的开关
@@ -251,7 +251,7 @@ export const navBarConfig: NavBarConfig = {
 				},
 				{
 					name: "Bilibili",
-					url: "https://space.bilibili.com/701864046",
+					url: "https://space.bilibili.com/7174365",
 					external: true,
 					icon: "fa6-brands:bilibili",
 				},
@@ -345,7 +345,7 @@ export const profileConfig: ProfileConfig = {
 		{
 			name: "Bilibli",
 			icon: "fa6-brands:bilibili",
-			url: "https://space.bilibili.com/701864046",
+			url: "https://space.bilibili.com/7174365",
 		},
 		{
 			name: "Gitee",
@@ -411,7 +411,7 @@ export const expressiveCodeConfig: ExpressiveCodeConfig = {
 };
 
 export const commentConfig: CommentConfig = {
-	enable: false, // 启用评论功能。当设置为 false 时，评论组件将不会显示在文章区域。
+	enable: true, // 启用评论功能。当设置为 false 时，评论组件将不会显示在文章区域。
 	twikoo: {
 		envId: "https://twikoo.vercel.app",
 		lang: SITE_LANG,
@@ -419,8 +419,8 @@ export const commentConfig: CommentConfig = {
 };
 
 export const announcementConfig: AnnouncementConfig = {
-	title: "Announcement", // 公告标题
-	content: "Welcome to my blog! This is a sample announcement.", // 公告内容
+	title: "在干嘛？", // 公告标题
+	content: "偷偷学习中...", //  公告内容
 	closable: true, // 允许用户关闭公告
 	link: {
 		enable: false, // 启用链接
@@ -434,10 +434,10 @@ export const musicPlayerConfig: MusicPlayerConfig = {
 	enable: true, // 启用音乐播放器功能
 	mode: "meting", // 音乐播放器模式，可选 "local" 或 "meting"
 	meting_api:
-		"https://meting-api-omega.vercel.app/api?server=:server&type=:type&id=:id&auth=:auth&r=:r", // Meting API 地址
-	id: "003jZa140sTaFG", // 歌单ID
+		"http://8.137.34.60:3000/api?server=:server&type=:type&id=:id&auth=:auth&r=:r", // Meting API 地址
+	id: "9629782152", // 歌单ID
 	server: "tencent", // 音乐源服务器。有的meting的api源支持更多平台,一般来说,netease=网易云音乐, tencent=QQ音乐, kugou=酷狗音乐, xiami=虾米音乐, baidu=百度音乐
-	type: "song", // 播单类型
+	type: "playlist", // 播单类型
 };
 
 export const footerConfig: FooterConfig = {
@@ -455,7 +455,7 @@ export const footerConfig: FooterConfig = {
  */
 export const sidebarLayoutConfig: SidebarLayoutConfig = {
 	// 侧边栏位置：单侧(unilateral)或双侧(both)
-	position: "both",
+	position: "unilateral",
 
 	// 侧边栏组件配置列表
 	components: [
@@ -602,7 +602,7 @@ export const sidebarLayoutConfig: SidebarLayoutConfig = {
 };
 
 export const sakuraConfig: SakuraConfig = {
-	enable: false, // 默认关闭樱花特效
+	enable: true, // 默认关闭樱花特效
 	sakuraNum: 21, // 樱花数量
 	limitTimes: -1, // 樱花越界限制次数，-1为无限循环
 	size: {
