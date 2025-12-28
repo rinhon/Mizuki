@@ -313,6 +313,7 @@ export type MusicPlayerConfig = {
 	id: string; // 歌单ID
 	server: string; // 音乐源服务器
 	type: string; // 音乐类型
+	auth?: string; // (可选) API 鉴权 Token，用于自建 API
 };
 
 export type FooterConfig = {

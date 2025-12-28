@@ -23,6 +23,8 @@ let meting_id = musicPlayerConfig.id ?? "14164869977";
 let meting_server = musicPlayerConfig.server ?? "netease";
 // Meting API 的类型，从配置中获取或使用默认值
 let meting_type = musicPlayerConfig.type ?? "playlist";
+// Meting API 的鉴权 Token
+let meting_auth = musicPlayerConfig.auth ?? "";
 // 播放状态，默认为 false (未播放)
 let isPlaying = true;
 // 播放器是否展开，默认为 false
@@ -108,7 +110,7 @@ async function fetchMetingPlaylist() {
 		.replace(":server", meting_server)
 		.replace(":type", meting_type)
 		.replace(":id", meting_id)
-		.replace(":auth", "")
+		.replace(":auth", meting_auth)
 		.replace(":r", Date.now().toString());
 	try {
 		const res = await fetch(apiUrl);
@@ -228,6 +230,10 @@ function playSong(index: number) {
 function getAssetPath(path: string): string {
 	if (path.startsWith("http://") || path.startsWith("https://")) return path;
 	if (path.startsWith("/")) return path;
+	// 修复：处理 Meting API 返回的以 IP 开头但缺少协议的 URL
+	if (/^\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}/.test(path)) {
+		return `http://${path}`;
+	}
 	return `/${path}`;
 }
 
