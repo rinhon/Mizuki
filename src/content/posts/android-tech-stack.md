@@ -1,6 +1,8 @@
 ---
 title: Android 学习
 published: 2025-12-29
+alias: android-tech-stack
+author: Rinhon
 description: ""
 image: ""
 tags: ["Android","Kotlin"]

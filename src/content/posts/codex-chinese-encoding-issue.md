@@ -1,6 +1,8 @@
 ---
 title: Codex 中文乱码问题
 published: 2025-12-29
+alias: codex-chinese-encoding-issue
+author: Rinhon
 description: ""
 image: ""
 tags: []

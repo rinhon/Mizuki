@@ -1,6 +1,8 @@
 ---
 title: 服务器SSH免密登录
 published: 2025-12-29
+alias: server-ssh-passwordless-login
+author: Rinhon
 description: ""
 image: ""
 tags: ["Linux","SSH"]

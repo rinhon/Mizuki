@@ -1,6 +1,8 @@
 ---
 title: 文件夹设置图片封面
 published: 2025-12-29
+alias: set-folder-picture-cover
+author: Rinhon
 description: ""
 image: ""
 tags: ["powershell","ImageMagick"]
