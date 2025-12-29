@@ -1,11 +1,13 @@
 ---
 title: Markdown Mermaid 图表
 published: 2023-10-01
-pinned: false
 description: 一个包含 Mermaid 的 Markdown 博客文章简单示例。
+image: ""
 tags: [Markdown, 博客, Mermaid]
 category: 示例
 draft: false
+pinned: false
+lang: zh-CN
 ---
 # Markdown 与 Mermaid 图表完全指南
 

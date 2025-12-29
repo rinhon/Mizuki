@@ -2,9 +2,12 @@
 title: 在文章中插入视频
 published: 2022-08-01
 description: 这篇文章展示了如何在博客文章中插入嵌入式视频。
+image: ""
 tags: [示例, 视频]
 category: 示例
 draft: false
+pinned: false
+lang: zh-CN
 ---
 
 只需从 YouTube 或其他平台复制嵌入代码，并将其粘贴到 markdown 文件中。

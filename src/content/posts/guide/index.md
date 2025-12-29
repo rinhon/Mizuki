@@ -6,6 +6,8 @@ image: "./cover.png"
 tags: ["Mizuki", "博客", "自定义"]
 category: 指南
 draft: false
+pinned: false
+lang: zh-CN
 ---
 
 此博客模板基于 [Astro](https://astro.build/) 构建。对于本指南中未提及的内容，你可以在 [Astro 文档](https://docs.astro.build/)中找到答案。

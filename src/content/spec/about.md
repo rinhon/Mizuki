@@ -1,3 +1,14 @@
+---
+title: about
+published: 2025-12-29
+description: ""
+image: ""
+tags: []
+category: Spec
+draft: false
+pinned: false
+lang: zh-CN
+---
 本站基于 **Astro** 框架构建，使用了 [Mizuki](https://github.com/matsuzaka-yuki/mizuki) 主题。
 
 ::github{repo="matsuzaka-yuki/Mizuki"}

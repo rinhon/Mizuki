@@ -1,9 +1,13 @@
 ---
 title: 草稿示例
 published: 2022-07-01
+description: ""
+image: ""
 tags: [Markdown, 博客, 演示]
 category: 示例
 draft: true
+pinned: false
+lang: zh-CN
 ---
 
 # 这是一篇草稿

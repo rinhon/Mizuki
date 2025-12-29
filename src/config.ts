@@ -96,9 +96,9 @@ export const siteConfig: SiteConfig = {
 			desktop: [
 				"/assets/desktop-banner/1.webp",
 				"/assets/desktop-banner/2.webp",
-				"/assets/desktop-banner/3.webp",
+				// "/assets/desktop-banner/3.webp",
 				"/assets/desktop-banner/4.webp",
-				"/assets/desktop-banner/5.webp",
+				// "/assets/desktop-banner/5.webp",
 				"/assets/desktop-banner/6.webp",
 			], // 桌面横幅图片
 			mobile: [
@@ -349,13 +349,13 @@ export const profileConfig: ProfileConfig = {
 		},
 		{
 			name: "Gitee",
-			icon: "mdi:git",
-			url: "https://gitee.com/matsuzakayuki",
+			icon: "fa6-brands:qq",
+			url: "tencent://message/?uin=1369167910&Site=qq&Menu=yes",
 		},
 		{
 			name: "GitHub",
 			icon: "fa6-brands:github",
-			url: "https://github.com/matsuzaka-yuki",
+			url: "https://github.com/rinhon",
 		},
 		// {
 		// 	name: "Codeberg",

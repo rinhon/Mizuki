@@ -31,7 +31,7 @@ const localAnimeList: AnimeItem[] = [
 		progress: 28, // 当前观看的集数
 		totalEpisodes: 28,
 		startDate: "2023-09",
-		endDate: "2023-12",
+		endDate: "2024-01",
 	},	{
 		title: "野生的大魔王出现了！",
 		status: "completed",
