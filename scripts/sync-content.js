@@ -103,8 +103,12 @@ for (const mapping of contentMappings) {
 	}
 
 	// 删除现有的符号链接
-	if (fs.existsSync(destPath)) {
-		fs.unlinkSync(destPath);
+	try {
+		if (fs.existsSync(destPath) || fs.lstatSync(destPath).isSymbolicLink()) {
+			fs.unlinkSync(destPath);
+		}
+	} catch (e) {
+		// ignore errors if file doesn't exist
 	}
 
 	// 创建符号链接 (Windows 需要管理员权限,否则复制文件)

@@ -23,7 +23,7 @@ const SITE_TIMEZONE = 8; //设置你的网站时区 from -12 to 12 default in UT
 export const siteConfig: SiteConfig = {
 	title: "Rinhon",
 	subtitle: "高手笔记",
-	siteURL: "http://blog.rinhonlc.fun/", // 请替换为你的站点URL，以斜杠结尾
+	siteURL: "http://rinhonlc.fun/", // 请替换为你的站点URL，以斜杠结尾
 	siteStartDate: "2025-01-01", // 站点开始运行日期，用于站点统计组件计算运行天数
 
 	timeZone: SITE_TIMEZONE,
@@ -434,7 +434,7 @@ export const musicPlayerConfig: MusicPlayerConfig = {
 	enable: true, // 启用音乐播放器功能
 	mode: "meting", // 音乐播放器模式，可选 "local" 或 "meting"
 	meting_api:
-		"http://8.137.34.60:3000/api?server=:server&type=:type&id=:id&auth=:auth&r=:r", // Meting API 地址
+		"http://meting.rinhonlc.fun:3000/api?server=:server&type=:type&id=:id&auth=:auth&r=:r", // Meting API 地址
 	id: "9629782152", // 歌单ID
 	server: "tencent", // 音乐源服务器。有的meting的api源支持更多平台,一般来说,netease=网易云音乐, tencent=QQ音乐, kugou=酷狗音乐, xiami=虾米音乐, baidu=百度音乐
 	type: "playlist", // 播单类型
