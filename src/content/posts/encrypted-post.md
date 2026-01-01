@@ -86,7 +86,6 @@ category: "技术"
 ## 工作原理
 
 ```mermaid
-graph LR
     A[用户密码] --> B[bcrypt 哈希]
     B --> C[密码哈希]
     C --> D[提取前 32 个字符]
